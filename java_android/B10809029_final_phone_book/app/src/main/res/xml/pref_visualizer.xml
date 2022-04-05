@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <CheckBoxPreference
+        android:defaultValue="@bool/show_notify_defult"
+        android:key="show_notify"
+        android:summaryOff="我都做了開一下啦(owo"
+        android:summaryOn="ㄟ黑"
+        android:title="通知功能" />
+
+</PreferenceScreen>

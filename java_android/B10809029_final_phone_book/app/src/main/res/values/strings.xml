@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">phone_book</string>
+
+    <string name="main_notification_channel_name">Primary</string>
+    <string name="charging_reminder_notification_title">Add user</string>
+    <string name="charging_reminder_notification_body">成功了嗎?(owo</string>
+
+</resources>

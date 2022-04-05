@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/test"
+    app:startDestination="@+id/nav_scan">
+
+    <fragment
+        android:id="@+id/nav_scan"
+        android:name="com.example.phone_book.Recycler"
+        android:label="fragment_scan"
+        tools:layout="@layout/fragment_recycleview" >
+        <action
+            android:id="@+id/nav_scan_to_detail"
+            app:destination="@id/nav_detail" />
+        <argument
+            android:name="name"
+            app:argType="string"
+            android:defaultValue='"unknown"'/>
+
+        <argument android:name="phone"
+            app:argType="string"
+            android:defaultValue='"unknown"'/>
+    </fragment>
+    <fragment
+        android:id="@+id/nav_detail"
+        android:name="com.example.phone_book.Detail"
+        android:label="fragment_detail"
+        tools:layout="@layout/fragment_detail" >
+
+        <action
+            android:id="@+id/action_nav_detail_to_nav_scan"
+            app:destination="@id/nav_scan" />
+    </fragment>
+
+</navigation>

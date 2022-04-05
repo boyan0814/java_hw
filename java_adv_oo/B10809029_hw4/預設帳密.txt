@@ -1,0 +1,2 @@
+帳號:account 	密碼:key
+帳號:account2 	密碼:key2
